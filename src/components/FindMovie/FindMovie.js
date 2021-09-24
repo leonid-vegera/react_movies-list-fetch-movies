@@ -14,7 +14,7 @@ export const FindMovie = ({ addMovie }) => {
 
   const getMovie = () => {
     request(query)
-      .then((result) => {
+      .then((result, error) => {
         if (result.Response === 'False') {
           setError(true);
 
